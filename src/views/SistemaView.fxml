@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="833.0" prefWidth="1110.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SistemaController">
+    <stylesheets>
+        <URL value="@/css/style.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="833.0" prefWidth="1294.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="833.0" prefWidth="277.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="833.0" prefWidth="283.0" style="-fx-background-color: #3F2863;">
+                     <children>
+                        <Button fx:id="btn_NuevaVenta" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#irAPane" prefHeight="69.0" prefWidth="283.0" stylesheets="@../css/style.css" text="Nueva Venta" textFill="WHITE">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/Icons/nuevaVenta.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Clientes" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#irAPane" prefHeight="69.0" prefWidth="283.0" stylesheets="@../css/style.css" text="Clientes" textFill="WHITE">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/Icons/clientes.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Proveedores" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#irAPane" prefHeight="69.0" prefWidth="283.0" stylesheets="@../css/style.css" text="Proveedores" textFill="WHITE">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/Icons/proveedores.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Producto" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#irAPane" prefHeight="69.0" prefWidth="283.0" stylesheets="@../css/style.css" text="Producto" textFill="WHITE">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/Icons/productos.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Ventas" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#irAPane" prefHeight="69.0" prefWidth="283.0" stylesheets="@../css/style.css" text="Ventas" textFill="WHITE">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/Icons/ventas.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Configuracion" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#irAPane" prefHeight="69.0" prefWidth="283.0" stylesheets="@../css/style.css" text="Configuracion" textFill="WHITE">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/Icons/configuracion.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane fx:id="stackPnl_ContentArea" prefHeight="833.0" prefWidth="995.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

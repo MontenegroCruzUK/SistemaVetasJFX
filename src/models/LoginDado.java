@@ -36,7 +36,7 @@ public class LoginDado {
                 login.setId(rs.getInt("id"));
                 login.setCorreo(rs.getString("nombre"));
                 login.setPassword(rs.getString("password"));
-                mensaje.alertaInformacion("Todo ");
+                
             }
 
         } catch (SQLException e) {

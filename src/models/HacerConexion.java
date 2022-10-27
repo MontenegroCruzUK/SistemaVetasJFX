@@ -19,7 +19,7 @@ public class HacerConexion {
 
     public Connection getConnection() {
         try {
-            String url = "jdbc:sqlite:/home/montenegro/NetBeansProjects/SistemaVentas/db/db_SistemaVentas";
+            String url = "jdbc:sqlite:/home/montenegro/NetBeansProjects/SistemaVentasJFX/db/db_SistemaVentas";
             connection = DriverManager.getConnection(url);
             //mensaje.alertaInformacion("Se hizo la conexion");
             System.out.println("Se pudo acceder a la URL: " + url);

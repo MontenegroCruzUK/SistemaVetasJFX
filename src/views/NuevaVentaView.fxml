@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
-
-<Pane prefHeight="833.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NuevaVentaController">
+<Pane prefHeight="833.0" prefWidth="1063.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NuevaVentaController">
    <children>
-      <BorderPane prefHeight="833.0" prefWidth="995.0">
+      <BorderPane prefHeight="833.0" prefWidth="1063.0">
          <top>
-            <Pane prefHeight="54.0" prefWidth="995.0" BorderPane.alignment="CENTER">
+            <Pane prefHeight="54.0" prefWidth="1063.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="995.0" spacing="38.0">
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="1063.0" spacing="45.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/style.css">
                      <children>
                         <TextField prefHeight="26.0" prefWidth="64.0" promptText="Codigo" />
                         <TextField prefHeight="26.0" prefWidth="250.0" promptText="Nombre Producto" />
@@ -21,19 +24,43 @@
                         <TextField prefHeight="26.0" prefWidth="67.0" promptText="Precio" />
                         <TextField prefHeight="26.0" prefWidth="94.0" promptText="Stock" />
                         <TextField prefHeight="26.0" prefWidth="77.0" />
-                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" text="Eliminar" />
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" styleClass="button1" stylesheets="@../css/style.css" text="Eliminar" />
                      </children>
                   </HBox>
                </children>
             </Pane>
          </top>
          <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            <Pane prefHeight="716.0" prefWidth="1062.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView prefHeight="716.0" prefWidth="1063.0">
+                     <columns>
+                        <TableColumn prefWidth="152.99996948242188" text="Codigo" />
+                        <TableColumn prefWidth="342.0" text="Decripcion" />
+                        <TableColumn prefWidth="198.0" text="Cantidad" />
+                        <TableColumn prefWidth="211.0" text="Precio Unidad" />
+                        <TableColumn prefWidth="158.0" text="Total" />
+                     </columns>
+                  </TableView>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin></Pane>
          </center>
          <bottom>
-            <Pane prefHeight="65.0" prefWidth="995.0" BorderPane.alignment="CENTER">
+            <Pane prefHeight="63.0" prefWidth="1063.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox prefHeight="66.0" prefWidth="995.0" />
+                  <HBox alignment="CENTER" layoutY="-1.0" prefHeight="64.0" prefWidth="1063.0" spacing="45.0">
+                     <children>
+                        <TextField prefHeight="26.0" prefWidth="99.0" promptText="DNI / RUC" />
+                        <TextField prefHeight="26.0" prefWidth="130.0" promptText="Nombre" />
+                        <TextField prefHeight="26.0" prefWidth="35.0" />
+                        <TextField prefHeight="26.0" prefWidth="35.0" />
+                        <TextField prefHeight="26.0" prefWidth="51.0" />
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" styleClass="button1" stylesheets="@../css/style.css" text="Generar Ventas" />
+                        <Label prefHeight="16.0" prefWidth="97.0" text="Total A pagar: " />
+                        <Label prefHeight="16.0" prefWidth="119.0" text="_________________" />
+                     </children></HBox>
                </children>
             </Pane>
          </bottom>
